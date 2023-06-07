@@ -1,4 +1,4 @@
-// app.js
+
 function register() {
     const username = document.getElementById('registerUsername').value;
     const password = document.getElementById('registerPassword').value;
@@ -20,7 +20,7 @@ function register() {
     
     localStorage.setItem(username, JSON.stringify(user));
 
-    const totalUsers = Object.keys(localStorage).length - 1;  // Subtract 1 to account for the 'currentUser' item
+    const totalUsers = Object.keys(localStorage).length - 1;  
     alert('Registration successful. Total users: ' + totalUsers);
 }
 
@@ -80,7 +80,7 @@ function updateUserInfo() {
     const currentPassword = document.getElementById('currentPassword').value;
     const newPassword = document.getElementById('newPassword').value;
 
-    // Check if the current password is correct
+    
     if (currentPassword === currentUser.password) {
         const updatedUser = {
             username: username,
@@ -90,7 +90,7 @@ function updateUserInfo() {
             role: 'normal user'
         };
         
-        // Save the updated user object to localStorage
+        
         localStorage.setItem(username, JSON.stringify(updatedUser));
         localStorage.setItem('currentUser', JSON.stringify(updatedUser));
 
