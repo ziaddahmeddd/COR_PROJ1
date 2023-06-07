@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update User Information</title>
+</head>
+<body>
+    <h2>Update User Information</h2>
+    <form id="updateForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="updateUsername" disabled><br>
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="updateGender"><br>
+        <label for="phone">Phone:</label><br>
+        <input type="text" id="updatePhone"><br>
+        <label for="password">Current Password:</label><br>
+        <input type="password" id="currentPassword"><br>
+        <label for="password">New Password:</label><br>
+        <input type="password" id="newPassword"><br>
+        <button type="button" onclick="updateUserInfo()">Update</button>
+    </form>
+    <button type="button" onclick="window.location.href='user.html'">Go Back</button>
+    <script src="app.js"></script>
+</body>
+</html>
